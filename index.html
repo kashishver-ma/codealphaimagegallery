@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="gallery-container">
+      <div class="gallery">
+        <img id="current-image" src="images/saveme.png" alt="Gallery Image" />
+      </div>
+      <div class="navigation">
+        <button class="nav-btn" id="prev-btn">&lt;</button>
+        <button class="nav-btn" id="next-btn">&gt;</button>
+      </div>
+      <div class="thumbnails">
+        <img
+          class="thumbnail"
+          src="images/todo.png"
+          alt="Thumbnail 1"
+          onclick="changeImage('images/todo.png')"
+        />
+        <img
+          class="thumbnail"
+          src="images/write1.jpg"
+          alt="Thumbnail 2"
+          onclick="changeImage('images/write1.jpg')"
+        />
+        <img
+          class="thumbnail"
+          src="images/todo2.webp"
+          alt="Thumbnail 3"
+          onclick="changeImage('images/todo2.webp')"
+        />
+        <!-- Add more thumbnails as needed -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
